@@ -1,0 +1,148 @@
+{
+  "repository": {
+    "name": "Luki42/lang-703",
+    "githubId": 246282165,
+    "url": "https://github.com/Luki42/lang-703",
+    "isFork": false,
+    "original": {
+      "name": "",
+      "githubId": 0,
+      "url": ""
+    },
+    "isPullRequest": false,
+    "pullRequestId": 0
+  },
+  "builds": {
+    "buggyBuild": {
+      "id": 660583226,
+      "url": "http://travis-ci.org/Luki42/lang-703/builds/660583226",
+      "date": "Mar 10, 2020 12:46:32 PM"
+    }
+  },
+  "reproductionBuggyBuild": {
+    "reproductionDateBeginning": "Mar 18, 2020 11:04:48 AM",
+    "reproductionDateEnd": "Mar 18, 2020 11:06:36 AM",
+    "machineInfo": {
+      "hostName": "36508a891112",
+      "numberCPU": 8,
+      "freeMemory": 168569224,
+      "totalMemory": 203948032
+    },
+    "totalDuration": 105,
+    "processDurations": {
+      "cloning": {
+        "nbSteps": 1,
+        "totalDuration": 1,
+        "stepNames": [
+          "CloneRepository"
+        ],
+        "stepDurations": [
+          1
+        ]
+      },
+      "building": {
+        "nbSteps": 2,
+        "totalDuration": 39,
+        "stepNames": [
+          "CheckoutBuggyBuild",
+          "BuildProject"
+        ],
+        "stepDurations": [
+          0,
+          39
+        ]
+      },
+      "testing": {
+        "nbSteps": 1,
+        "totalDuration": 7,
+        "stepNames": [
+          "TestProject"
+        ],
+        "stepDurations": [
+          7
+        ]
+      },
+      "fixing": {
+        "nbSteps": 1,
+        "totalDuration": 49,
+        "stepNames": [
+          "NPEFix"
+        ],
+        "stepDurations": [
+          49
+        ]
+      }
+    },
+    "projectRootPomPath": "./workspace/Luki42/lang-703/pom.xml"
+  },
+  "patchDiff": {
+    "files": {
+      "numberAdded": 0,
+      "numberChanged": 0,
+      "numberDeleted": 0
+    },
+    "lines": {
+      "numberAdded": 0,
+      "numberDeleted": 0
+    }
+  },
+  "tests": {
+    "failingModule": "/root/workspace/Luki42/lang-703",
+    "overallMetrics": {
+      "numberRunning": 2,
+      "numberPassing": 0,
+      "numberFailing": 0,
+      "numberErroring": 2,
+      "numberSkipping": 0,
+      "failures": [
+        {
+          "failureName": "java.lang.NullPointerException",
+          "isError": true,
+          "occurrences": 2
+        }
+      ]
+    },
+    "failingClasses": [
+      {
+        "testClass": "org.apache.commons.lang3.StringUtilsTest",
+        "numberRunning": 2,
+        "numberPassing": 0,
+        "numberFailing": 0,
+        "numberErroring": 2,
+        "numberSkipping": 0
+      }
+    ],
+    "failureDetails": [
+      {
+        "testClass": "org.apache.commons.lang3.StringUtilsTest",
+        "testMethod": "testJoin_Objectarray",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      },
+      {
+        "testClass": "org.apache.commons.lang3.StringUtilsTest",
+        "testMethod": "testJoin_ArrayChar",
+        "failureName": "java.lang.NullPointerException",
+        "isError": true
+      }
+    ]
+  },
+  "projectMetrics": {
+    "numberModules": 1,
+    "numberPlugins": 0,
+    "numberSourceFiles": 99,
+    "numberTestFiles": 1,
+    "numberLibrariesFailingModule": 2,
+    "numberLines": 19047
+  },
+  "commits": {
+    "buggyBuild": {
+      "repoName": "Luki42/lang-703",
+      "branchName": "master",
+      "sha": "6f80923a399e570fd06c110961d9138824f97f2a",
+      "url": "http://github.com/Luki42/lang-703/commit/6f80923a399e570fd06c110961d9138824f97f2a",
+      "date": "Mar 10, 2020 12:40:23 PM"
+    }
+  },
+  "type": "only_fail"
+}
