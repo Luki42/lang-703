@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.lang3.StringUtilsTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.045 sec <<< FAILURE! - in org.apache.commons.lang3.StringUtilsTest
+testJoin_Objectarray(org.apache.commons.lang3.StringUtilsTest)  Time elapsed: 0.015 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3385)
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3340)
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3230)
+	at org.apache.commons.lang3.StringUtilsTest.testJoin_Objectarray(StringUtilsTest.java:90)
+
+testJoin_ArrayChar(org.apache.commons.lang3.StringUtilsTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException: null
+	at org.apache.commons.lang3.StringUtils.join(StringUtils.java:3298)
+	at org.apache.commons.lang3.StringUtilsTest.testJoin_ArrayChar(StringUtilsTest.java:106)
+
